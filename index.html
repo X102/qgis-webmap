@@ -100,10 +100,10 @@
                         <th scope="row">Longitude</th>\
                         <td class="visible-with-data" id="Longitude">' + (feature.properties['Longitude'] !== null ? autolinker.link(String(feature.properties['Longitude']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <th scope="row">image_path</th>\
-                        <img>' + (feature.properties['image_path'] !== null ? autolinker.link(String(feature.properties['image_path']).replace(/'/g, '\'').toLocaleString()) : '') + '</img>\
-                    </tr>\
+                    <tr>
+    <th scope="row">Hình ảnh</th>
+    <td><img src="' + (feature.properties['image_path'] !== null ? String(feature.properties['image_path']) : '') + '" style="max-width: 200px; height: auto;" /></td>
+</tr>
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
