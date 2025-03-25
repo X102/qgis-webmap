@@ -102,7 +102,7 @@
                     </tr>\
                     <tr>\
                         <th scope="row">image_path</th>\
-                        <td>' + (feature.properties['image_path'] !== null ? autolinker.link(String(feature.properties['image_path']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <img>' + (feature.properties['image_path'] !== null ? autolinker.link(String(feature.properties['image_path']).replace(/'/g, '\'').toLocaleString()) : '') + '</img>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
